@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Pendaftaran</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <p class="judul">PENDAFTARAN ITERA OLYMPIC </p>
+    <hr>
+    <form action="detail.html" method="POST">
+      <label for="nama">Nama Lengkap :</label>
+      <input type="text" name="nama" id="nama" placeholder="Masukan nama lengkap" required>
+  
+      <label for="email">Email :</label>
+      <input type="email" name="email" id="email" placeholder="Masukan email" required>
+
+      <label for="nim">Nomor Induk Mahasiswa :</label>
+      <input type="number" name="nim" id="nim" placeholder="Masukan NIM" required>
+  
+      <label for="alamat">Alamat :</label>
+      <input type="text" name="alamat" id="alamat" placeholder="Masukan alamat lengkap" required>
+  
+      <label for="ttl">Tempat Tanggal Lahir :</label>
+      <input type="date" name="ttl" id="ttl" required>
+      
+      <label for="foto profil">Foto Profil :</label>
+      <input type="file" name="foto" id="foto"  required>
+
+      <label for="bidang">Lomba Bidang Olahraga :</label>
+      <select class="bidang">
+        <option value="0">Bidang Olahraga</option>
+        <option value="Badminton">Badminton</option>
+        <option value="Catur">Catur</option>
+        <option value="Futsal">Futsal</option>
+        <option value="Sepak Bola">Sepak Bola</option>
+        <option value="Volly">Volly</option>
+      </select>
+
+      <input type="submit" value="Daftar">
+    </form>
+  </div>
+</body>
+
+</html>
